@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Pay Roll</title>
+    <link rel="stylesheet" href="/Employee_payroll/css/Emp_Register_Form.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/Employee_payroll/assets/logo.png" alt="Employee Payroll Logo">
+            <h1><span class="employee">EMPLOYEE</span> <span class="payroll">PAYROLL</span></h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form action="" class="payroll-form">
+                <h2>Employee Payroll Form</h2>
+                <div>
+                    <label for="Name">Name</label>
+                    <input class="nameinput" type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="profile">Profile image</label>
+                    <input class="radioinput" type="radio" id="profile1" name="profile" value="1">
+                    <span for="profile1"><img class="profile" src="/Employee_payroll/assets/profile1.png" alt="profile1"></span>
+
+                    <input class="radioinput" type="radio" id="profile2" name="profile" value="2">
+                    <span for="profile2"><img class="profile" src="/Employee_payroll/assets/profile2.png" alt="profile2"></span>
+
+                    <input class="radioinput" type="radio" id="profile3" name="profile" value="3">
+                    <span for="profile3"><img class="profile" src="/Employee_payroll/assets/profile3.png" alt="profile3"></span>
+
+                    <input class="radioinput" type="radio" id="profile4" name="profile" value="4">
+                    <span for="profile4"><img class="profile" src="/Employee_payroll/assets/profile4.png" alt="profile4"></span>
+                </div>
+
+                <div>
+                    <label for="gender"> Gender</label>
+
+                    <input class="radioinput" type="radio" id="male" name="gender" value="male">
+                    <span class="option" for="male">Male</span>
+
+                    <input class="radioinput" type="radio" id="female" name="gender" value="female">
+                    <span class="option" for="female">Female</span>
+                </div>
+
+                <div>
+                    <label for="department"> Department</label>
+                    <div class="check-box">
+                        <input type="checkbox" id="hr" name="department" value="HR">
+                        <span class="option" for="hr">HR</span>
+
+                        <input type="checkbox" id="sales" name="department" value="Sales">
+                        <span class="option" for="hr">Sales</span>
+
+                        <input type="checkbox" id="finance" name="department" value="Finance">
+                        <span class="option" for="hr">Finance</span>
+
+                        <input type="checkbox" id="engineer" name="department" value="Engineer">
+                        <span class="option" for="hr">HR</span>
+
+                        <input type="checkbox" id="others" name="department" value="Others">
+                        <span class="option" for="hr">Others</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="salary"> Salary</label>
+                    <select name="salary" id="salary">
+                        <option value="">
+                            <p>Select Salary</p>
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="start-date">Start Date</label>
+                    <select id="day" name="day">
+                        <option value="">
+                            <p>Day</p>
+                        </option>
+                    </select>
+
+                    <select id="month" name="month">
+                        <option value="">
+                            <p>Month</p>
+                        </option>
+                    </select>
+
+                    <select id="year" name="year">
+                        <option value="">
+                            <p>Year</p>
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="notes">Notes</label>
+                    <textarea name="notes" id="notes"></textarea>
+                </div>
+                <div class="btns">
+                    <div class="right-btn">
+                        <button type="cancel">
+                            <p>Cancel</p>
+                        </button>
+                    </div>
+                    <div class="left-btns">
+                        <button type="submit">
+                            <p>Submit</p>
+                        </button>
+                        <button type="reset">
+                            <p>Reset</p>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
