@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 10%;
+    gap: 10px;
+    margin-left: 10%;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid #42515F; */
+    opacity: 1;
+}
+
+.logo h1 {
+    /* width: 6.614%; */
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 22px/25px Montserrat;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.employee {
+    color: #82A70C;
+}
+
+.payroll {
+    color: #42515F;
+}
+main {
+    width: 100%;
+    padding-bottom: 30px;
+    height: calc(100vh - 79px);
+    /* height: 100vh; */
+    padding-top: 20px;
+    /* UI Properties */
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    /* align-items: center; */
+}
+
+.emp-details {
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.emp-details h1 {
+    width: 217px;
+    height: 37px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 28px/25px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    opacity: 1;
+}
+
+.search-adduser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    gap: 5%;
+}
+
+.search-add-user-icon {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 55px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000029;
+    border-radius: 28px;
+    opacity: 1;
+}
+
+.button[type="reset"] .button[type="submit"] {
+    width: 60px;
+    border-radius: 40px;
+
+}
+
+button {
+    width: 77px;
+    height: 55px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000029;
+    border-radius: 28px;
+    border: none;
+    opacity: 1;
+}
+
+.add-user-btn {
+    gap: 10px;
+}
+
+.add-user-btn button {
+    width: 170px;
+    height: 55px;
+    border: none;
+    background: #82A70C 0% 0% no-repeat padding-box;
+    color: white;
+    border-radius: 5px;
+    opacity: 1;
+
+}
+
+.search-adduser input {
+    border: none
+}
+
+
+
+.main-info h4 {
+
+    text-align: left;
+    /* font: normal normal medium 18px/24px Roboto; */
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.emp-col-details {
+    width: auto;
+    height: 65px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E3E3;
+    opacity: 1;
+}
+
+table {
+ border-collapse: collapse;
+}
+tbody{
+    width: 100%;
+}
+
+thead {
+    /* width: 1549px; */
+    width: 100%;
+    height: 67px;
+   
+    /* UI Properties */
+    background: #42515F 0% 0% no-repeat padding-box;
+}
+
+
+
+thead th {
+    height: 67px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.img-th {
+width: 8%;
+padding-left: 25px;
+}
+
+/* .img-td{
+    padding-left: 25px;
+} */
+
+.name-th{
+width: 16%;
+text-align: left;
+}
+
+.gender-th{
+width: 5%;
+}
+/* .gender-td{
+    text-align: left;
+font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+color: #3D3D3D;
+opacity: 1;
+} */
+.dept-th{
+    width: 12%;
+}
+/* .dept-td {
+    text-align: left;
+font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+color: #3D3D3D;
+opacity: 1;
+} */
+.sal-th{
+    width: 6%;
+}
+/* .sal-td{
+    text-align: left;
+font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+color: #3D3D3D;
+opacity: 1;
+} */
+.date-th{
+    width: 8%;
+}
+/* .date-td{
+    text-align: left;
+font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+color: #3D3D3D;
+opacity: 1;
+} */
+.action-th{
+    width: 6%;
+
+}
+/* .action-td{
+    text-align: left;
+} */
+.action-th i{
+   padding: 22px;
+}
+tbody {
+    height: 65px;
+    /* padding-top: 20px; */
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E3E3;
+    opacity: 1;
+}
+
+tbody tr {
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+}
+
+
+
+tbody tr td a {
+    text-decoration: none;
+    padding: 10px;
+    /* UI Properties */
+    background: #E9FEA5 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    opacity: 1;
+}

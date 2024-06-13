@@ -17,25 +17,29 @@
     </header>
     <main>
         <section>
-            <form action="" class="payroll-form">
+            <form action="#" class="payroll-form">
                 <h2>Employee Payroll Form</h2>
                 <div>
                     <label for="Name">Name</label>
-                    <input class="nameinput" type="text" id="name" name="name">
+                    <input class="nameinput" type="text" id="name" name="name" required>
                 </div>
                 <div>
                     <label for="profile">Profile image</label>
-                    <input class="radioinput" type="radio" id="profile1" name="profile" value="1">
-                    <span for="profile1"><img class="profile" src="/Employee_payroll/assets/profile1.png" alt="profile1"></span>
+                    <input class="radioinput" type="radio" id="profile1" name="profile" value="/Employee_payroll/assets/profile1.png">
+                    <span for="profile1"><img class="profile" src="/Employee_payroll/assets/profile1.png"
+                            alt="profile1"></span>
 
-                    <input class="radioinput" type="radio" id="profile2" name="profile" value="2">
-                    <span for="profile2"><img class="profile" src="/Employee_payroll/assets/profile2.png" alt="profile2"></span>
+                    <input class="radioinput" type="radio" id="profile2" name="profile" value="profile" src="/Employee_payroll/assets/profile2.png">
+                    <span for="profile2"><img class="profile" src="/Employee_payroll/assets/profile2.png"
+                            alt="profile2"></span>
 
                     <input class="radioinput" type="radio" id="profile3" name="profile" value="3">
-                    <span for="profile3"><img class="profile" src="/Employee_payroll/assets/profile3.png" alt="profile3"></span>
+                    <span for="profile3"><img class="profile" src="/Employee_payroll/assets/profile3.png"
+                            alt="profile3"></span>
 
                     <input class="radioinput" type="radio" id="profile4" name="profile" value="4">
-                    <span for="profile4"><img class="profile" src="/Employee_payroll/assets/profile4.png" alt="profile4"></span>
+                    <span for="profile4"><img class="profile" src="/Employee_payroll/assets/profile4.png"
+                            alt="profile4"></span>
                 </div>
 
                 <div>
@@ -72,7 +76,12 @@
                     <label for="salary"> Salary</label>
                     <select name="salary" id="salary">
                         <option value="">
-                            <p>Select Salary</p>
+                           <p>Select Salary</p>
+                            <option value="10000">10000</option>
+                            <option value="20000">20000</option>
+                            <option value="30000">30000</option>
+                            <option value="40000">40000</option>
+                            <option value="50000">50000</option>
                         </option>
                     </select>
                 </div>
@@ -104,15 +113,15 @@
                 </div>
                 <div class="btns">
                     <div class="right-btn">
-                        <button type="cancel">
+                        <button type="cancel" id="cancel-btn">
                             <p>Cancel</p>
                         </button>
                     </div>
                     <div class="left-btns">
-                        <button type="submit">
+                        <button type="submit" id="submit-btn">
                             <p>Submit</p>
                         </button>
-                        <button type="reset">
+                        <button type="reset" id="reset-btn">
                             <p>Reset</p>
                         </button>
                     </div>
@@ -120,6 +129,10 @@
             </form>
         </section>
     </main>
+
+    <script src="/Employee_payroll/javascript/EmpRegister.js"></script>
 </body>
+
+
 
 </html>
