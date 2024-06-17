@@ -20,90 +20,77 @@
             <form action="#" class="payroll-form">
                 <h2>Employee Payroll Form</h2>
                 <div>
-                    <label for="Name">Name</label>
-                    <input class="nameinput" type="text" id="name" name="name" required>
+                    <label for="userName">Name</label>
+                    <input class="nameinput" type="text" id="userName" name="userName" required>
                 </div>
                 <div>
-                    <label for="profile">Profile image</label>
-                    <input class="radioinput" type="radio" id="profile1" name="profile" value="/Employee_payroll/assets/profile1.png">
-                    <span for="profile1"><img class="profile" src="/Employee_payroll/assets/profile1.png"
-                            alt="profile1"></span>
+                    <label for="profile">Profile image</label >
+                    <input class="radioinput" type="radio" id="profile1" name="profile" value="/Employee_payroll/assets/profile1.png" required>
+                    <span><img class="profile" src="/Employee_payroll/assets/profile1.png" alt="profile1"></span>
 
-                    <input class="radioinput" type="radio" id="profile2" name="profile" value="profile" src="/Employee_payroll/assets/profile2.png">
-                    <span for="profile2"><img class="profile" src="/Employee_payroll/assets/profile2.png"
-                            alt="profile2"></span>
+                    <input class="radioinput" type="radio" id="profile2" name="profile" value="/Employee_payroll/assets/profile2.png" required>
+                    <span><img class="profile" src="/Employee_payroll/assets/profile2.png" alt="profile2"></span>
 
-                    <input class="radioinput" type="radio" id="profile3" name="profile" value="3">
-                    <span for="profile3"><img class="profile" src="/Employee_payroll/assets/profile3.png"
-                            alt="profile3"></span>
+                    <input class="radioinput" type="radio" id="profile3" name="profile" value="/Employee_payroll/assets/profile3.png" required>
+                    <span><img class="profile" src="/Employee_payroll/assets/profile3.png" alt="profile3"></span>
 
-                    <input class="radioinput" type="radio" id="profile4" name="profile" value="4">
-                    <span for="profile4"><img class="profile" src="/Employee_payroll/assets/profile4.png"
-                            alt="profile4"></span>
+                    <input class="radioinput" type="radio" id="profile4" name="profile" value="/Employee_payroll/assets/profile4.png" required>
+                    <span><img class="profile" src="/Employee_payroll/assets/profile4.png" alt="profile4"></span>
                 </div>
 
                 <div>
                     <label for="gender"> Gender</label>
-
-                    <input class="radioinput" type="radio" id="male" name="gender" value="male">
+                    <input class="radioinput" type="radio" id="male" name="gender" value="male" required>
                     <span class="option" for="male">Male</span>
 
-                    <input class="radioinput" type="radio" id="female" name="gender" value="female">
+                    <input class="radioinput" type="radio" id="female" name="gender" value="female" required>
                     <span class="option" for="female">Female</span>
                 </div>
 
                 <div>
                     <label for="department"> Department</label>
                     <div class="check-box">
-                        <input type="checkbox" id="hr" name="department" value="HR">
+                        <input type="checkbox" id="hr" name="department" value="HR" >
                         <span class="option" for="hr">HR</span>
 
-                        <input type="checkbox" id="sales" name="department" value="Sales">
-                        <span class="option" for="hr">Sales</span>
+                        <input type="checkbox" id="sales" name="department" value="Sales" >
+                        <span class="option" for="sales">Sales</span>
 
                         <input type="checkbox" id="finance" name="department" value="Finance">
-                        <span class="option" for="hr">Finance</span>
+                        <span class="option" for="finance">Finance</span>
 
-                        <input type="checkbox" id="engineer" name="department" value="Engineer">
-                        <span class="option" for="hr">HR</span>
+                        <input type="checkbox" id="engineer" name="department" value="Engineer" >
+                        <span class="option" for="engineer">Engineer</span>
 
-                        <input type="checkbox" id="others" name="department" value="Others">
-                        <span class="option" for="hr">Others</span>
+                        <input type="checkbox" id="others" name="department" value="Others" >
+                        <span class="option" for="others">Others</span>
                     </div>
                 </div>
 
                 <div>
                     <label for="salary"> Salary</label>
                     <select name="salary" id="salary">
-                        <option value="">
-                           <p>Select Salary</p>
-                            <option value="10000">10000</option>
-                            <option value="20000">20000</option>
-                            <option value="30000">30000</option>
-                            <option value="40000">40000</option>
-                            <option value="50000">50000</option>
-                        </option>
+                        <option value="">Select Salary</option>
+                        <option value="10000" >10000</option>
+                        <option value="20000">20000</option>
+                        <option value="30000">30000</option>
+                        <option value="40000">40000</option>
+                        <option value="50000">50000</option>
                     </select>
                 </div>
 
                 <div>
                     <label for="start-date">Start Date</label>
                     <select id="day" name="day">
-                        <option value="">
-                            <p>Day</p>
-                        </option>
+                        <option value="">Day</option>
                     </select>
 
                     <select id="month" name="month">
-                        <option value="">
-                            <p>Month</p>
-                        </option>
+                        <option value="">Month</option>
                     </select>
 
                     <select id="year" name="year">
-                        <option value="">
-                            <p>Year</p>
-                        </option>
+                        <option value="">Year</option>
                     </select>
                 </div>
 
@@ -113,7 +100,7 @@
                 </div>
                 <div class="btns">
                     <div class="right-btn">
-                        <button type="cancel" id="cancel-btn">
+                        <button type="button" id="cancel-btn">
                             <p>Cancel</p>
                         </button>
                     </div>
@@ -132,7 +119,4 @@
 
     <script src="/Employee_payroll/javascript/EmpRegister.js"></script>
 </body>
-
-
-
 </html>

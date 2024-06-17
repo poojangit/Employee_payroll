@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Employee_payroll/css/Emp_Dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,20 +20,26 @@
     </header>
     <main class="nav-bar">
         <section class="top-section">
-            <div class="emp-details">
+            <div class="emp-details-text">
                 <h1>Employee Details</h1>
+                <div id="emp-count">count</div>
             </div>
             <div class="search-adduser">
                 <div class="search-add-user-icon">
                     <button type="reset"><i class="fa-solid fa-circle-xmark"></i></button>
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></div>
-                <div class="add-user-btn"><button><i class="fa-solid fa-plus"></i>Add User</button></div>
+                    <input id="searchInput" type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="add-user-btn">
+                    <button  id="add-user-btn-id"><i class="fa-solid fa-plus"></i>
+                        <h3>Add User</h3>
+                    </button>
+                </div>
             </div>
         </section>
-    
-    <section class="emp-details">
-       <!-- <main class="emp-row-details">
+
+        <section class="emp-details">
+            <!-- <main class="emp-row-details">
         <div class="main-info">
             <div><h4>NAME</h4></div>
             <div><h4>GENDER</h4></div>
@@ -46,35 +54,38 @@
        <main class="emp-col-details">
 
        </main> -->
-       <table >
-        <thead >
-            <th class="img-th"></th>
-            <th class="name-th">Name</th>
-            <th class="gender-th">Gender</th>
-            <th class="dept-th">Department</th>
-            <th class="sal-th">Salary</th>
-            <th class="date-th">Start date</th>
-            <th class="action-th">Actions</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="img-th"><img src="/Employee_payroll/assets/profile1.png" alt=""></td>
-            <td class="name-th"><span>Amarpa Shashanka</span></td>
-            <td class="gender-th"><span>Female</span></td>
-            <td class="dept-th"class="dept-fields">
-                <a href="">sales</a>
-                <a href="">HR</a>
-                <a href="">Finance</a>
-            </td>
-            <td class="sal-th"><span>10,000</span></td>
-            <td class="date-th"><span> 29 Oct 2001</span></td>
-            <td class="action-th" class="action-icon"><i class="fa-solid fa-trash-can"></i><i class="fa-solid fa-pen"></i></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-</main>
+            <table>
+                <thead>
+                    <th class="img-th"></th>
+                    <th class="name-th">Name</th>
+                    <th class="gender-th">Gender</th>
+                    <th class="dept-th">Department</th>
+                    <th class="sal-th">Salary</th>
+                    <th class="date-th">Start date</th>
+                    <th class="action-th">Actions</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="img-th"><img src="/Employee_payroll/assets/profile1.png" alt=""></td>
+                        <td class="name-th"><span>Amarpa Shashanka</span></td>
+                        <td class="gender-th"><span>Female</span></td>
+                        <td class="dept-th" class="dept-fields">
+                            <a href="">sales</a>
+                            <a href="">HR</a>
+                            <a href="">Finance</a>
+                        </td>
+                        <td class="sal-th"><span>10,000</span></td>
+                        <td class="date-th"><span> 29 Oct 2001</span></td>
+                        <td class="action-th" class="action-icon">
+                            <i class="fa-solid fa-trash-can" ></i>
+                            <i class="fa-solid fa-pen" ></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
+    <script src="/Employee_payroll/javascript/EmpDashboard.js"></script>
 </body>
 
 </html>

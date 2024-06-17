@@ -63,10 +63,23 @@ main {
     /* align-items: center; */
 }
 
-.emp-details {
+.emp-details{
+
     margin-left: 10%;
     margin-right: 10%
 }
+.emp-details-text{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 20px;
+}
+#emp-count{
+    display: flex;
+    align-items: center;
+    font: normal normal bold 28px/25px Roboto;
+}
+
 
 .emp-details h1 {
     width: 217px;
@@ -80,13 +93,20 @@ main {
 }
 
 .search-adduser {
+opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10%;
     gap: 5%;
 }
-
+.add-user-btn{
+    display: flex;
+    justify-content: center;
+}
+.add-user-btn h3 {
+    margin: 0;
+}
 .search-add-user-icon {
     display: flex;
     justify-content: center;
