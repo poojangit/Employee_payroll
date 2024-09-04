@@ -60,7 +60,6 @@ main {
     display: flex;
     justify-content: space-between;
     padding-bottom: 2%;
-    /* align-items: center; */
 }
 
 .emp-details{
@@ -158,7 +157,6 @@ button {
 .main-info h4 {
 
     text-align: left;
-    /* font: normal normal medium 18px/24px Roboto; */
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -173,6 +171,7 @@ button {
 }
 
 table {
+    width: 100%;
  border-collapse: collapse;
 }
 tbody{
@@ -180,7 +179,7 @@ tbody{
 }
 
 thead {
-    /* width: 1549px; */
+
     width: 100%;
     height: 67px;
    
@@ -201,66 +200,16 @@ thead th {
 }
 
 .img-th {
-width: 8%;
+/* width: 8%; */
 padding-left: 25px;
 }
 
-/* .img-td{
-    padding-left: 25px;
-} */
 
 .name-th{
-width: 16%;
+/* width: 16%; */
 text-align: left;
 }
 
-.gender-th{
-width: 5%;
-}
-/* .gender-td{
-    text-align: left;
-font: normal normal normal 16px/21px Roboto;
-letter-spacing: 0px;
-color: #3D3D3D;
-opacity: 1;
-} */
-.dept-th{
-    width: 12%;
-}
-/* .dept-td {
-    text-align: left;
-font: normal normal normal 16px/21px Roboto;
-letter-spacing: 0px;
-color: #3D3D3D;
-opacity: 1;
-} */
-.sal-th{
-    width: 6%;
-}
-/* .sal-td{
-    text-align: left;
-font: normal normal normal 16px/21px Roboto;
-letter-spacing: 0px;
-color: #3D3D3D;
-opacity: 1;
-} */
-.date-th{
-    width: 8%;
-}
-/* .date-td{
-    text-align: left;
-font: normal normal normal 16px/21px Roboto;
-letter-spacing: 0px;
-color: #3D3D3D;
-opacity: 1;
-} */
-.action-th{
-    width: 6%;
-
-}
-/* .action-td{
-    text-align: left;
-} */
 .action-th i{
    padding: 22px;
 }

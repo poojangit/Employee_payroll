@@ -1,32 +1,14 @@
-// function createTableRow(empData) {
-//   let tableRow = ""
-//   // let empData = []
-//   for (let emp of empData) {
-//     tableRow = tableRow + `<tr>
-//     <td class="img-th"><img src=${emp.profileImg} alt=""></td>
-//     <td class="name-th"><span>Amarpa Shashanka</span></td>
-//     <td class="gender-th"><span>Female</span></td>
-//     <td class="dept-th"class="dept-fields">
-//         <a href="">sales</a>
-//         <a href="">HR</a>
-//         <a href="">Finance</a>
-//     </td>
-//     <td class="sal-th"><span>10,000</span></td>
-//     <td class="date-th"><span> 29 Oct 2001</span></td>
-//     <td class="action-th" class="action-icon"><i  class="fa-solid fa-trash-can"></i><i class="fa-solid fa-pen"></i></td>
-//   </tr>`
-//   }
-// }
-// <img src="/assests/bin.png" alt="delete" width="20px" height="24px" onclick="deleteEmp('${ele.userName}')"></img>
-
 
 document.addEventListener('DOMContentLoaded', () => {
   function createTableRow(empData) {
     let count = 0
       let tableRows = '';
       for (let emp of empData) {
+        console.log(emp);
           tableRows += `<tr>
+
               <td class="img-th"><img src=${emp.profileImg} alt=""></td>
+              
               <td class="name-th"><span>${emp.userName}</span></td>
               <td class="gender-th"><span>${emp.gender}</span></td>
               <td class="dept-th" class="dept-fields">
@@ -44,10 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('emp-count').innerHTML= `( ${count} )`
       return tableRows;
   }
- 
-  // document.getElementById('add-user-btn').addEventListener('click', ()=>{
-  //   windows.open("./Emp_Register_Form.html")
-  // })
+
 
   function loadEmployeeData() {
       let employees = JSON.parse(localStorage.getItem('users')) || [];
@@ -86,11 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return emp
       }
     })
-    // if (!searchedEmp) {
-      
-    // } else {
-      
-    // }
+  
     let tableBody = document.querySelector('tbody');
     tableBody.innerHTML = ""
     tableBody.innerHTML = createTableRow( searchedEmp)

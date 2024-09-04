@@ -25,21 +25,6 @@
      yearSelect.appendChild(option);
  }
 
-
-// window.addEventListener("DOMContentLoaded", ()=> {
-//     let submitRef = document.getElementById('submit-btn')
-//     submitRef.addEventListener('click', ()=> {
-//         alert("Data submitted successfully")
-//     })
-// })
-
-// window.addEventListener("DOMContentLoaded", ()=>{
-//     let cancelRef = document.getElementById('cancel-btn')
-//     cancelRef.addEventListener('click', ()=> {
-
-//     })
-// })
-
 document.addEventListener('DOMContentLoaded', (event) => {
     let form = document.querySelector('.payroll-form');
     let editEmp = JSON.parse(localStorage.getItem('editEmp'));
